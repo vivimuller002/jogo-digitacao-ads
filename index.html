@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevStorm - Sistema de Fases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>⚡ DevStorm</h1>
+    <p>Digite os conceitos para subir de nível!</p>
+
+    <div id="ui-bar">
+        <div id="score-display">PONTOS: 0</div>
+        <div id="phase-display">FASE: 1</div>
+        <div id="lives-display">VIDAS: ❤❤❤</div>
+    </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <div id="game-container">
+        <div id="overlay-screen" style="display: none;">
+            <h2 id="overlay-title" style="font-size: 2.5rem; text-shadow: 0 0 10px #ff007f; margin: 0;"></h2>
+            <p id="overlay-text" style="font-size: 1.2rem; color: #fff; margin-top: 10px; text-align: center; max-width: 80%;"></p>
+            <button id="overlay-button" class="btn-action" onclick="handleOverlayAction()"></button>
+        </div>
+    </div>
+
+    <input type="text" id="input-field" placeholder="Digite aqui..." autocomplete="off">
+
+    <script src="script.js"></script>
+</body>
+</html>
